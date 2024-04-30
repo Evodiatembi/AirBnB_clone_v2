@@ -12,6 +12,6 @@ class City(BaseModel):
     state_id = ""
     name = ""
     
-     __tablename__ = "cities"
-    name = Column(String(128), null=None)
-    state_id = Column(String(60), ForeignKey('states.id'), null=None)
+    __tablename__ = "cities"
+    name = Column(String(128), nullable=False)
+    state_id = Column(String(60), ForeignKey('states.id'), nullable=False)
